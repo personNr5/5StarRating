@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+  <title>rating System Example</title>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="ratingLib/rating_js.js" ></script>
+
+  <style type="text/css">
+
+    ul {
+
+      display: flex;
+      align-items: center;
+    }
+
+    ul li {
+
+      display: inline-block;
+    }
+
+    .vote-validation {
+
+      font-family: sans-serif;
+      font-weight: 500;
+      background-color: rgba(25,175,25,0.7);
+
+      border: 2px solid rgba(25,175,25,0.8);
+      border-radius: 10px;
+      padding: 5px;
+      margin-left: 10px;
+
+      transition: all 1s;
+    }
+
+    .vote-validation.voted {
+
+      background-color: rgba(175,175,175,0.7);
+      border: 2px solid rgba(175,175,175,0.8);
+      color: rgba(255,255,255);
+    }
+
+    .vote-validation:hover {
+
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+  </header>
+
+  <section class="sec01" id="stop1">
+
+        <form id="ratingForm7" class="ratinForm" method="POST">
+
+          <input type="hidden" class="form-control rating" id="rating" name="rating" value="1" />
+          <input type="hidden" class="form-control itemId" id="itemId" name="itemId" value="7007" />
+          <input type="hidden" class="form-control voteStatus" id="voteStatus" name="voteStatus" value="0" />
+
+          <ul class="vote vote7">
+            <li class="star"><img src="img/rating_0.png" alt="star" class="ratingStar" value="1" formID="ratingForm7" /></li>
+            <li class="star"><img src="img/rating_0.png" alt="star" class="ratingStar" value="2" formID="ratingForm7" /></li>
+            <li class="star"><img src="img/rating_0.png" alt="star" class="ratingStar" value="3" formID="ratingForm7" /></li>
+            <li class="star"><img src="img/rating_0.png" alt="star" class="ratingStar" value="4" formID="ratingForm7" /></li>
+            <li class="star"><img src="img/rating_0.png" alt="star" class="ratingStar" value="5" formID="ratingForm7" /></li>
+            <li class="vote-validation">Vote !</li>
+          </ul>
+
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="sec02" id="stop2">
+
+        <form id="ratingForm1" class="ratinForm" method="POST">
+
+          <input type="hidden" class="form-control rating" id="rating" name="rating" value="1" />
+          <input type="hidden" class="form-control itemId" id="itemId" name="itemId" value="1001" />
+          <input type="hidden" class="form-control voteStatus" id="voteStatus" name="voteStatus" value="0" />
+
+          <ul class="vote vote7">
+            <li class="star"><img src="img/rating_0.png" alt="star" class="ratingStar" value="1" formID="ratingForm1" /></li>
+            <li class="star"><img src="img/rating_0.png" alt="star" class="ratingStar" value="2" formID="ratingForm1" /></li>
+            <li class="star"><img src="img/rating_0.png" alt="star" class="ratingStar" value="3" formID="ratingForm1" /></li>
+            <li class="star"><img src="img/rating_0.png" alt="star" class="ratingStar" value="4" formID="ratingForm1" /></li>
+            <li class="star"><img src="img/rating_0.png" alt="star" class="ratingStar" value="5" formID="ratingForm1" /></li>
+            <li class="vote-validation">Vote !</li>
+          </ul>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+  </footer>
+</body>
+</html>
